@@ -1,2 +1,74 @@
-# Expense-tracker-
-Expense Tracker (Python Flask) A simple web-based expense tracker application built using Python Flask. Users can add expenses and track spending through a clean web interface.  🚀 Features Add daily expenses View expense list Simple and clean UI Flask backend with HTML &amp; CSS frontend 🛠️ Tech Stack Python Flask HTML CSS 📂 Project Structure
+📊 Expense Tracker (Flask Web App)
+
+A simple and user-friendly Expense Tracker web application built using Flask, HTML, and CSS.
+It allows users to add expenses with date, description, and amount, view total spending, and reset all expenses.
+
+🚀 Features
+
+➕ Add expenses with date, description, and amount
+
+📅 Track expenses date-wise
+
+🧮 Automatically calculates total expenses
+
+🔄 Reset all expenses with one click
+
+🎨 Clean and responsive UI
+
+⚙️ Built using Python Flask
+
+🛠️ Technologies Used
+
+Python
+
+Flask
+
+HTML5
+
+CSS3
+
+📂 Project Structure
+Expense_Tracker/
+│
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+└── README.md
+
+▶️ How to Run the Project Locally
+1️⃣ Clone the repository
+git clone https://github.com/your-username/Expense_Tracker.git
+
+2️⃣ Navigate to the project folder
+cd Expense_Tracker
+
+3️⃣ Install dependencies
+pip install flask
+
+4️⃣ Run the application
+python app.py
+
+5️⃣ Open in browser
+http://127.0.0.1:5000/
+
+🧑‍💻 Future Improvements
+
+Store data using a database (SQLite)
+
+Edit and delete individual expenses
+
+Monthly and category-wise expense summary
+
+User authentication
+
+📌 Author
+
+Vasudha Sambhaji Kale
+Python & Flask Beginner Project
+📍 Built for learning and resume showcasing
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub!
