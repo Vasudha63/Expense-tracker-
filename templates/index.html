@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>💰 Expense Tracker</h1>
+
+        <h2>Total: ₹ {{ total }}</h2>
+
+        <!-- Add Expense Form -->
+        <form method="POST">
+            <label>Date</label>
+            <input type="date" name="date" required>
+
+            <label>Description</label>
+            <input type="text" name="name" placeholder="e.g. Food, Travel" required>
+
+            <label>Amount</label>
+            <input type="number" name="amount" placeholder="₹" required>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <!-- Reset Button -->
+        <form action="/reset" method="POST">
+            <button type="submit" class="reset-btn">
+                Reset All Expenses
+            </button>
+        </form>
+
+        <!-- Expense List -->
+        <h3>Expense History</h3>
+
+        <ul>
+            {% for expense in expenses %}
+                <li>
+                    <strong>{{ expense.date }}</strong>
+                    — {{ expense.name }}
+                    — ₹{{ expense.amount }}
+                </li>
+            {% else %}
+                <li>No expenses added yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
